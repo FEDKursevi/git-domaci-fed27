@@ -1,0 +1,47 @@
+@import "mixins";
+@import "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  background-color: $color-header;
+
+  @include clearfix;
+  li {
+    float: left;
+    padding: 15px 25px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-font-bsc-white;
+  }
+}
+
+#nav-first {
+  padding-right: 7em;
+  background-color: $color-orange;
+  text-decoration: underline;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  ul li:not(:first-child) {
+    display: none;
+  }
+
+  #nav-first {
+    width: 100%;
+  }
+}
