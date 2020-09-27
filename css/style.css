@@ -1,3 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+body {
+  height: auto;
+}
+
+section {
+  height: auto;
+  width: 100%;
+}
+
+nav {
+  height: 4em;
+  width: 100%;
+}
+nav .home {
+  float: left;
+  height: 100%;
+  width: 20%;
+  background-color: #f75311;
+  color: white;
+  font-size: 1.3em;
+  padding: 1em;
+  position: relative;
+}
+nav .home p {
+  display: inline-block;
+  margin: auto;
+  text-decoration: underline;
+}
+nav .home p img {
+  width: 15%;
+  margin-bottom: -12px;
+}
+nav ul {
+  float: left;
+  height: 100%;
+  width: 80%;
+  margin-top: 0;
+  background-color: #374249;
+  padding: 1.2em 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-top: 0.3em;
+  margin-left: 1.2em;
+  margin-right: 2em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  height: 50em;
+  background-image: url("../slike/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro .wrap1 {
+  width: 70%;
+  background-color: rgba(55, 66, 73, 0.5);
+  text-align: center;
+  padding: 0.5em;
+  color: white;
+  position: relative;
+  top: 70%;
+  margin: 0 auto;
+}
+.intro .wrap1 h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+.intro .wrap1 h3 {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.search .searchfilter {
+  padding: 1.5em;
+}
+.search .searchfilter:before, .search .searchfilter:after {
+  content: "";
+  display: block;
+}
+.search .searchfilter:after {
+  clear: both;
+}
+.search .searchfilter ul {
+  float: right;
+  width: auto;
+  margin-right: 15%;
+}
+.search .searchfilter ul li {
+  display: inline-block;
+  color: #797979;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: #cfd1d3 solid 1px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+.search .searchfilter ul li:hover {
+  background-color: #cfd1d3;
+  color: white;
+}
+.search .searchResults {
+  background-color: #f3f7f9;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 15em;
+}
+.search .searchResults .result {
+  height: 320px;
+  width: 260px;
+  margin: 20px;
+  position: relative;
+}
+.search .searchResults .result:hover .price {
+  display: block;
+}
+.search .searchResults .result img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.search .searchResults .result .price {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.5em 0.5em 2em;
+  font-size: 1.5em;
+  color: #374249;
+  display: none;
+}
+
+h2 {
+  color: #374249;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.pricing {
+  padding: 2em 15em;
+}
+.pricing p {
+  font-size: 1em;
+  color: #797979;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.pricing table {
+  padding: 0.5em;
+  margin: 0 auto;
+  width: 50%;
+}
+.pricing table, .pricing table tr, .pricing table td {
+  border-bottom: solid #797979 1px;
+  border-right: solid #797979 1px;
+  border-collapse: collapse;
+  padding: 0.5em;
+  text-align: center;
+}
+.pricing table .white {
+  border: none;
+}
+.pricing table .orange {
+  background-color: #f75311;
+  border: solid #797979 1px;
+  color: white;
+}
+.pricing table .location {
+  width: 20%;
+}
+.pricing table .gray {
+  background-color: #374249;
+  border: solid #797979 1px;
+  color: white;
+}
+.pricing table .left {
+  width: 25%;
+}
+.pricing table .price {
+  width: 30%;
+}
+
+.ContactUs {
+  background-color: #f3f7f9;
+  padding: 2em 15em;
+}
+.ContactUs:before, .ContactUs:after {
+  content: "";
+  display: block;
+}
+.ContactUs:after {
+  clear: both;
+}
+.ContactUs iframe {
+  float: left;
+  width: 25%;
+  height: 17em;
+}
+.ContactUs form {
+  float: right;
+  background-color: #f75311;
+  width: 60%;
+  padding: 1em;
+}
+.ContactUs form select {
+  width: 15%;
+  margin-bottom: 1em;
+}
+.ContactUs form input[name=name] {
+  float: right;
+  width: 80%;
+  margin-bottom: 1em;
+}
+.ContactUs form input[name=email] {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.ContactUs form textarea {
+  width: 100%;
+  height: 6em;
+  margin-bottom: -4px;
+}
+
+footer {
+  width: 100%;
+  background-color: #374249;
+  padding: 0.5em;
+}
+footer p {
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+}
+footer p span {
+  color: #f75311;
+}
 
 /*# sourceMappingURL=style.css.map */
