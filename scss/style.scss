@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-ul {
+nav ul {
   width: 100%;
   list-style: none;
   background-color: $color-header;
@@ -40,19 +40,19 @@ ul {
   }
 }
 
-.first-section{
-    background-color: #000;
-    color: $color-font-bsc-white;
-    text-align: center;
-    padding: 3em 0;
+.first-section {
+  background-color: #000;
+  color: $color-font-bsc-white;
+  text-align: center;
+  padding: 3em 0;
 
-    h1{
-        font-size: 2.5em;
-    }
+  h1 {
+    font-size: 2.5em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  ul {
+  nav ul {
     clear: both;
 
     li {
@@ -68,20 +68,113 @@ ul {
   }
 }
 
-@media only screen and (min-width:600px){
-    .first-section{
-        height: 70vh;
-        background-image: url("../slike/intro.jpg");
-        background-size: 100% 100%;
-        padding: 0;
-        position: relative;
-        
-        .main-title{
-            width: 70%; 
-            position: absolute;
-            bottom: 20%;
-            left: 15%;
-            background-color: rgba($color-header, 0.7);
-        }
+.second-section ul {
+  list-style: none;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  @include clearfix;
+
+  li {
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  button {
+    background-color: white;
+    border: 1px solid $color-font-gray;
+    padding: 10px;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: $color-font-gray;
+      color: $color-font-bsc-white;
     }
+  }
+}
+
+.img-gallery {
+  padding: 30px 10px;
+  background-color: $color-gray-bkg;
+  width: 100%;
+}
+
+@for $i from 1 through 6 {
+  .img-box#{$i} {
+    background-image: url("../slike/#{$i}.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .price {
+      position: absolute;
+      width: 100%;
+      display: none;
+    }
+
+    &:hover {
+      .price {
+        display: unset;
+        top: 0;
+        left: 0;
+        background-color: rgba($color-font-bsc-white, 0.5);
+        padding: 20px 10px;
+
+        p {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .first-section {
+    height: 70vh;
+    background-image: url("../slike/intro.jpg");
+    background-size: 100% 100%;
+    padding: 0;
+    position: relative;
+
+    .main-title {
+      width: 70%;
+      position: absolute;
+      bottom: 20%;
+      left: 15%;
+      background-color: rgba($color-header, 0.7);
+    }
+  }
+
+  ul {
+    .list {
+      margin-right: 10%;
+      float: right;
+    }
+  }
+
+  .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 100px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @for $i from 1 through 6 {
+    .img-box#{$i} {
+      height: 300px;
+      flex-basis: 47%;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  @for $i from 1 through 6 {
+    .img-box#{$i} {
+      flex-basis: 32%;
+    }
+  }
 }
