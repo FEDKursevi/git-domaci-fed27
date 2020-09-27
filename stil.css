@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #374249;
+}
+header nav {
+  width: 100%;
+  height: auto;
+}
+header nav li {
+  display: inline-block;
+  padding: 12px 36px 12px 12px;
+}
+header nav li.firstElement {
+  background-color: #f75311;
+  padding-right: 96px;
+}
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+header nav li a:hover {
+  text-decoration: underline;
+}
+header nav li img {
+  width: 24px;
+  height: 24px;
+}
+
+/*# sourceMappingURL=stil.css.map */
