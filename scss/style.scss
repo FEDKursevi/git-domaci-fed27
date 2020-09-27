@@ -1,2 +1,45 @@
 @import "vars";
 @import "mixins";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+    @include boxSizing;
+}
+
+nav {
+
+    .location {
+        padding-right: 7em;
+        background-color: $locationColor;
+        text-decoration: underline;
+      
+        i {
+          margin-right: 10px;
+        }
+      }
+
+    ul {
+        width: 100%;
+        list-style: none;
+        background-color: $DarkBlue;
+    
+        @include clearfix;
+
+        li {
+        float: left;
+        padding: 15px 25px;
+    
+            &:hover {
+                background-color: $hoverColor;
+                text-decoration: underline;
+            }
+        }
+    
+        a {
+        text-decoration: none;
+        color: $White;
+        }
+    }
+}
