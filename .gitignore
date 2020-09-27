@@ -1,0 +1,10 @@
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+css/**//.css
+1_velika.png
+2_srednja.png
+3_mala.png
+hover_primer.png
+Zadatak.txt
