@@ -1,0 +1,371 @@
+@import 'vars';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+// UTILITY
+@include basic;
+
+::placeholder, select {
+   font-size: 1rem;
+}
+
+.btn {
+   padding: 1rem 2rem;
+   background: white;
+   border: 1px solid $hover-color;
+   border-radius: 30px;
+   text-decoration: none;
+   color: $font-color;
+   margin-right: 3rem;
+}
+
+.bg-color-1 {
+   background: $color-1;
+}
+
+.bg-color-2 {
+   background: $color-2;
+}
+
+.hidden {
+   visibility: hidden;
+}
+
+.font-color {
+   color: $font-color;
+}
+
+.font-color-1 {
+   color: $color-1;
+}
+
+.btn:hover {
+   background: $hover-color;
+   color: white;
+}
+
+// NAV
+
+.navbar {
+   display: flex;
+   color: white;
+   width: 100%;
+   height: 5rem;
+
+   .location {
+      flex: 1;
+      display: flex;
+      background: $color-1;
+      align-items: center;
+      padding: 1rem 1rem 1rem 2.5rem;
+
+      .img-container {
+         height: 100%;
+         
+         img{
+            max-width: 100%;
+            max-height: 100%;
+         }
+      }
+
+      a {
+         color: white;
+         text-decoration: none;
+         font-size: 1.5rem;
+         margin-right: 1rem;
+
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+
+   .main-nav {
+      flex: 4;
+      background: $color-2;
+
+      ul {
+         display: flex;
+         list-style: none;
+         height: 100%;
+         align-items: center;
+
+         li {
+            margin-right: 6rem;
+
+            &:first-child {
+               margin-left: 3rem;
+            }
+
+            a {
+               font-size: 1.2rem;
+               color: white;
+               text-decoration: none;
+
+               &:hover {
+                  text-decoration: underline;
+               }
+            }
+
+         }
+      }
+   }
+}
+
+// INTRO SECTION
+
+.intro {
+   background: url('../slike/intro.jpg') no-repeat center center/cover;
+   height: 50rem;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+
+   &-content {
+      color: white;
+      background: rgba($color: #374249, $alpha: 0.5);
+      width: 70%;
+      text-align: center;
+      margin-bottom: 10rem;
+
+      h1 {
+         font-size: 4rem;
+         letter-spacing: 0.3px;
+      }
+
+      h2 {
+         letter-spacing: 0.5px;
+      }
+   }
+}
+
+// FILTERS SECTION
+
+.filters {
+   height: 9rem;
+
+   ul {
+      display: flex;
+      height: 100%;
+      list-style: none;
+      width: 100%;
+      justify-content: flex-end;
+      padding-right: 15rem;
+      li {
+         display: flex;
+         align-items: center;
+      }
+   }
+}
+
+// IMAGES SECTION
+
+.images {
+   background: $section-bg;
+   height: 50rem;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+   &-content {
+      width: 70%;
+      height: 100%;
+      padding: 3.2% 0;
+
+      .image-container {
+         margin-right: 1.5rem;
+         margin-bottom: 1.5rem;
+         width: 21%;
+         height: 48%;
+         display: inline-block;
+         position: relative;
+
+         .image-description-layer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(243, 244, 247, 0.6);
+            color: #000;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 40%;
+          
+            /* transition effect. not necessary */
+            transition: opacity .2s, visibility .2s;
+          }
+
+          &:hover .image-description-layer {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .image-description {
+            transition: .2s;
+            transform: translateY(1em);
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 1rem 0 0 1rem;
+          }
+
+          &:hover .image-description {
+            transform: translateY(0);
+          }
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+
+         &:nth-child(5) {
+            margin-bottom: 0;
+         }
+         
+         img {
+            width: 100%;
+            height: 100%;
+         }
+      }
+   }
+}
+
+// PRICING SECTION
+
+.pricing {
+   height: 29rem;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+   &-content {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+      padding: 2rem 0 3rem;
+
+      h1 {
+         color: $color-2;
+         text-transform: uppercase;
+         font-size: 2rem;
+         font-weight: 700;
+         justify-self: flex-start;
+      }
+
+      h2 {
+         color: $font-color;
+         font-size: 1rem;
+         margin-top: 2.5rem;
+         font-weight: 400;
+      }
+
+      table {
+         width: 100%;
+         margin-top: 2.5rem;
+         text-align: center;
+         border: 1px solid $font-color;
+         border-collapse: collapse;
+         color: white;
+
+         tr {
+            border: 1px solid $font-color;
+         }
+
+         th, td {
+            padding: 0.5rem;
+            border: 1px solid $font-color;
+            font-weight: 400;
+         }
+      }
+   }
+}
+
+// CONTACT SECTION
+
+.contact {
+   background: $section-bg;
+   height: 29rem;
+   width: 100%;
+   padding: 1rem 0;
+
+   h1 {
+         color: $color-2;
+         text-transform: uppercase;
+         font-size: 2rem;
+         font-weight: 700;
+         text-align: center;
+         margin-top: 1rem;
+   }
+
+   &-content {
+      width: 70%;
+      margin: 3rem auto;
+      display: flex;
+      justify-content: space-between;
+      height: 68%;
+      
+      .google-map {
+         width: 30%;
+         
+
+         iframe {
+            height: 100%;
+            width: 100%;
+         }
+      }
+
+      form {
+         width: 65%;
+         background: $color-1;
+         height: 88%;
+         padding: 1.5rem;
+         display: flex;
+         flex-direction: column;
+         
+
+         .form-group {
+            margin-bottom: 1.5rem;
+         }
+
+         .group-1 {
+            display: flex;
+            justify-content: space-between;
+         }
+
+         input, select, textarea {
+            padding: 0.4rem 0.5rem;
+            outline-color: $font-color;
+         }
+
+         textarea {
+            resize: none;
+         }
+
+         select {
+            width: 25%;
+         }
+
+         input[type=text] {
+            width: 70%;
+         }
+
+         input[type=email], textarea {
+            width: 100%;
+         }
+      }
+   }
+}
+
+// FOOTER
+
+.footer {
+   background: $color-2;
+   height: 3rem;
+   text-align: center;
+   color: white;
+   line-height: 3rem;
+}

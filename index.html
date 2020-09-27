@@ -7,6 +7,135 @@
    <title>HomeExchange</title>
 </head>
 <body>
-   
+   <nav class="navbar">
+      <div class="location">
+         <div class="img-container">
+            <img src="slike/location.png" alt="">
+         </div>
+         <a href="#">New York</a>
+      </div>
+      <div class="main-nav">
+         <ul>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Messages</a></li>
+         </ul>
+      </div>
+   </nav>
+   <section class="intro">
+      <div class="intro-content">
+         <h1>Welcome to HomeExchange</h1>
+         <h2>Your fastest way to find or sell home online</h2>
+      </div>
+   </section>
+   <section class="filters">
+      <ul>
+         <li><a class="btn" href="#">$1,200 - $4,000</a></li>
+         <li><a class="btn" href="#">1+ Bedroom</a></li>
+         <li><a class="btn" href="#">Garage</a></li>
+      </ul>
+   </section>
+   <section class="images">
+      <div class="images-content">
+         <div class="image-container">
+            <img src="slike/1.jpg" alt="">
+            <div class="image-description-layer">
+               <p class="image-description">Loft Apartment<br>$3,000</p>
+            </div>
+         </div>
+         <div class="image-container">
+            <img src="slike/2.jpg" alt="">
+            <div class="image-description-layer">
+               <p class="image-description">Apartment Studio<br>$3,500</p>
+            </div>
+         </div>
+         <div class="image-container">
+            <img src="slike/3.jpg" alt="">
+            <div class="image-description-layer">
+               <p class="image-description">One-Bedroom Apartment<br>$2,000</p>
+            </div>
+         </div>
+         <div class="image-container">
+            <img src="slike/4.jpg" alt="">
+            <div class="image-description-layer">
+               <p class="image-description">Penthouse Office<br>$4,700</p>
+            </div>
+         </div>
+         <div class="image-container">
+            <img src="slike/5.jpg" alt="">
+            <div class="image-description-layer">
+               <p class="image-description">Lux House<br>$7,200</p>
+            </div>
+         </div>
+         <div class="image-container">
+            <img src="slike/6.jpg" alt="">
+            <div class="image-description-layer">
+               <p class="image-description">One-Story House<br>$5,900</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="pricing">
+      <div class="pricing-content">
+         <h1>Pricing</h1>
+         <h2>Our services prices in New York</h2>
+         <table>
+            <tr>
+              <th class="hidden">Firstname</th>
+              <th class="hidden">Lastname</th>
+              <th class="bg-color-1" colspan="2">Price</th>
+            </tr>
+            <tr>
+              <td class="hidden">Jill</td>
+              <td class="hidden">Smith</td>
+              <td class="bg-color-2">Rent/Buy</td>
+              <th class="bg-color-2">Buy</th>
+            </tr>
+            <tr>
+              <td class="bg-color-1" rowspan="3">Location</td>
+              <td class="bg-color-2">Downtown</td>
+              <td class="font-color">$3</td>
+              <th class="font-color">$3</th>
+            </tr>
+            <tr>           
+               <td class="bg-color-2">Center</td>
+               <td class="font-color">$3</td>
+               <th class="font-color">$3</th>
+             </tr>
+             <tr> 
+               <td class="bg-color-2">Manhattan</td>
+               <td class="font-color">$3</td>
+               <th class="font-color">$3</th>
+             </tr>
+          </table>
+      </div>
+   </section>
+   <section class="contact">
+      <h1>Contact Us</h1>
+      <div class="contact-content">
+         <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183948656495!2d-73.98773128434358!3d40.75797874273792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2srs!4v1601168192267!5m2!1sen!2srs" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </div>
+         <form action="#" method="POST">
+            <div class="form-group group-1">
+               <select name="gender" id="gender">
+                  <option value="mrs">Mrs</option>
+                  <option value="mr">Mr</option>
+                </select>
+               <input type="text" id="name" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+               <input type="email" id="email" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+               <textarea id="message" name="message" rows="5" cols="50" placeholder="Your Message"></textarea>
+            </div>
+         </form>
+      </div>
+   </section>
+   <footer class="footer">
+      Copyright &copy; 2016 <span class="font-color-1">HomeExchange</span>
+   </footer>
 </body>
 </html>
