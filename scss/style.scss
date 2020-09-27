@@ -40,6 +40,17 @@ ul {
   }
 }
 
+.first-section{
+    background-color: #000;
+    color: $color-font-bsc-white;
+    text-align: center;
+    padding: 3em 0;
+
+    h1{
+        font-size: 2.5em;
+    }
+}
+
 @media only screen and (max-width: 600px) {
   ul {
     clear: both;
@@ -55,4 +66,22 @@ ul {
     text-align: left;
     width: 100%;
   }
+}
+
+@media only screen and (min-width:600px){
+    .first-section{
+        height: 70vh;
+        background-image: url("../slike/intro.jpg");
+        background-size: 100% 100%;
+        padding: 0;
+        position: relative;
+        
+        .main-title{
+            width: 70%; 
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
+            background-color: rgba($color-header, 0.7);
+        }
+    }
 }
