@@ -6,7 +6,7 @@
   padding: 0;
   font-family: $font;
   font-size: 16px;
-  box-sizing: border-box;
+  @include box-sizing;
 }
 
 nav ul {
@@ -115,12 +115,14 @@ nav ul {
 }
 
 h2,
-.third-section p {
+.third-section p,
+h3 {
   color: $color-header;
   text-align: center;
 }
 
-h2 {
+h2,
+h3 {
   text-transform: uppercase;
   font-size: 1.5em;
   padding: 20px 0;
@@ -164,6 +166,68 @@ table {
   display: none;
 }
 
+.google-map {
+  padding: 30px 0 20px 70px;
+  display: inline-block;
+  height: 350px;
+  width: 48%;
+}
+
+.form-box {
+  float: right;
+  padding: 30px;
+  width: 48%;
+  @include clearfix;
+}
+
+form {
+  padding: 30px;
+  background-color: $color-orange;
+  border-radius: 5px;
+
+  input,
+  textarea,
+  select {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid $color-font-gray;
+  }
+
+  #gender {
+    width: 30%;
+  }
+
+  #name {
+    width: 69%;
+  }
+
+  #email {
+    display: block;
+    width: 100%;
+  }
+
+  #msg {
+    display: block;
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: $color-dark-blue;
+  padding: 15px;
+  text-align: center;
+
+  p {
+    color: rgba($color-font-bsc-white, 0.5);
+    display: inline-block;
+  }
+}
+
+#orange {
+  color: $color-orange;
+}
+
 @media only screen and (max-width: 600px) {
   nav ul {
     clear: both;
@@ -202,6 +266,30 @@ table {
       color: $color-font-bsc-white;
       border: none;
       cursor: pointer;
+    }
+  }
+
+  .google-map {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+    iframe {
+      width: 60%;
+    }
+  }
+
+  .form-box {
+    float: unset;
+    width: 100%;
+
+    #gender {
+      width: 100%;
+    }
+
+    #name {
+      width: 100%;
     }
   }
 }
@@ -251,5 +339,23 @@ table {
     .img-box#{$i} {
       flex-basis: 32%;
     }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .google-map {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+    iframe {
+      width: 60%;
+    }
+  }
+
+  .form-box {
+    float: unset;
+    width: 100%;
   }
 }
