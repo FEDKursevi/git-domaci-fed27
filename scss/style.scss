@@ -18,6 +18,10 @@ ul {
   li {
     float: left;
     padding: 15px 25px;
+
+    &:hover {
+      background-color: $color-hover;
+    }
   }
 
   a {
@@ -37,11 +41,18 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-  ul li:not(:first-child) {
-    display: none;
+  ul {
+    clear: both;
+
+    li {
+      padding-top: 10px;
+      float: none;
+      text-align: center;
+    }
   }
 
   #nav-first {
+    text-align: left;
     width: 100%;
   }
 }
