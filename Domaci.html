@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaci</title>
+    <link rel="stylesheet" href="css\main.css">
+    
+</head>
+<body>
+<nav>
+    <div class="levo">
+        <img src="slike\location.png" alt="">
+        <a href="#">New York</a>
+    </div>
+    <div class="desno">
+        <a href="#">Rent</a>
+        <a href="#">Buy</a>
+        <a href="#">Sell</a>
+        <a href="#">Messages</a>
+    </div>
+</nav>
+<header>
+    <div>
+        <h1>Welcome to HomeExchange</h1>
+        <p>Your fastest way to find or sell home online.</p>
+    </div>
+</header>
+<div class="prvi">
+    <button>Garage</button>
+    <button>1+ Bedroom</button>
+    <button>$1.200-$4.000</button>
+</div>
+<div class="slike">
+    <div><img src="slike/1.jpg" alt=""><p>Loft Apartmant <br>$3000</p></div>  
+    <div><img src="slike/2.jpg" alt=""><p>Loft Apartmant <br>$3000</p></div>
+    <div><img src="slike/3.jpg" alt=""><p>Loft Apartmant <br>$3000</p></div>
+    <div><img src="slike/4.jpg" alt=""><p>Loft Apartmant <br>$3000</p></div>
+    <div><img src="slike/5.jpg" alt=""><p>Loft Apartmant <br>$3000</p></div>  
+    <div><img src="slike/6.jpg" alt=""><p>Loft Apartmant <br>$3000</p></div>
+</div>
+<div class="tabela">
+    <h2>Pricing</h2>
+    <p>Our services prices in New Yourk</p>
+    <table>
+        <tr>
+            <td colspan="2" class="none"></td>
+            <td colspan="2" class="crvena">Price</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="none"></td>
+            <td class="siva">Rent/Buy</td>
+            <td class="siva">Sell</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="crvena">Location</td>
+            <td class="siva">Downtown</td>
+            <td>3$</td>
+            <td>3$</td>
+        </tr>
+        <tr>
+            <td class="siva">Center</td>
+            <td>3$</td>
+            <td>3$</td>
+        </tr>
+        <tr>
+            <td class="siva">Manhatn</td>
+            <td>3$</td>
+            <td>3$</td>
+        </tr>
+    </table>
+</div>
+<div class="zaglavlje">
+    <div class="unutra">
+        <h2>Contact us</h2>
+        <div id="maps"></div>
+        <script>
+            function initMap() {
+            var uluru = {lat: -25.344, lng: 131.036};
+            var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+            var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+            </script>
+            <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYJPvJfS8Fm-chrm6a8QiQNZwU49Tk5hs&callback=initMap">
+            </script>
+        <form action="post" name="forma">
+            <select name="status">
+                <option value="Mrs">Mrs</option>            
+                <option value="Mr">Mr</option>
+                <option value="Sir">Sir</option>
+            </select>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea name="" id="" cols="30" rows="3">Your Messages</textarea>
+        </form>
+    </div>
+</div>
+<footer>
+    <p>
+        Copyright @copy 2016 <span>HomeExchange</span>
+    </p>
+</footer>
+
+</body>
+</html>
+
+
+ 

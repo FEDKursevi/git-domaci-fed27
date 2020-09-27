@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #797979;
+}
+
+nav {
+  background-color: #374249;
+  width: 100%;
+  height: 3em;
+  display: block;
+  float: left;
+}
+nav a {
+  color: white;
+}
+nav div {
+  display: inline-block;
+}
+nav .levo {
+  width: 30%;
+  padding-left: 3%;
+  float: left;
+  height: 100%;
+  padding-top: 0.5%;
+  background-color: #f75311;
+}
+nav .levo a {
+  font-size: 1.5em;
+  margin-top: 2%;
+  display: inline-block;
+}
+nav .levo img {
+  width: 13%;
+  float: left;
+}
+nav .desno {
+  width: 69%;
+  height: 100%;
+  float: left;
+}
+nav .desno a {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 10%;
+  text-align: center;
+  float: left;
+  padding-top: 1.6%;
+}
+nav .desno a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  background-image: url(../slike/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 30em;
+  float: left;
+  width: 100%;
+  padding-top: 25%;
+}
+header div {
+  background: rgba(0, 0, 0, 0.4);
+  width: 70%;
+  color: white;
+  margin: auto;
+}
+header div h1 {
+  font-size: 2em;
+  color: white;
+}
+header div p {
+  color: white;
+}
+
+.prvi {
+  width: 85%;
+  float: left;
+  margin: 2% 0;
+}
+.prvi button {
+  float: right;
+  border: 1px solid gray;
+  padding: 1%;
+  background-color: white;
+  margin: 1%;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.prvi button:hover {
+  color: white;
+  background-color: #374249;
+}
+
+.slike {
+  float: left;
+  width: 100%;
+  background-color: #f3f7f9;
+  padding: 10% 15% 3% 5%;
+}
+.slike div {
+  width: 21%;
+  margin-left: 2%;
+  display: block;
+  float: left;
+  height: 15em;
+  margin-bottom: 2%;
+  position: relative;
+}
+.slike div:first-child .slike div:first-child {
+  margin-left: 0;
+}
+.slike div:hover p {
+  visibility: visible;
+}
+.slike div p {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  color: black;
+  font-size: 1.5em;
+  height: 4em;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.slike div img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.tabela {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: left;
+  height: 25em;
+  width: 100%;
+  text-align: center;
+  padding: 10% 25% 15%;
+}
+.tabela h2 {
+  color: black;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+.tabela p {
+  margin-top: 5%;
+  color: gray;
+}
+.tabela table {
+  text-align: center;
+  margin-top: 5%;
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 5%;
+}
+.tabela table td {
+  border: 1px solid gray;
+  line-height: 2em;
+}
+.tabela table td.crvena {
+  background: #f75311;
+  color: white;
+}
+.tabela table td.siva {
+  background: darkgray;
+  color: white;
+}
+.tabela table td.none {
+  border: none;
+}
+
+.zaglavlje {
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #f3f7f9;
+}
+.zaglavlje .unutra {
+  width: 80%;
+  margin: 2% auto;
+}
+.zaglavlje .maps {
+  height: 150px;
+  width: 20%;
+  display: block;
+  float: left;
+}
+.zaglavlje #map {
+  height: 400px;
+  width: 100%;
+}
+.zaglavlje form {
+  background-color: #f75311;
+  width: 50%;
+  display: block;
+  padding: 3%;
+  float: right;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.zaglavlje [type=text] {
+  padding-left: 1%;
+  width: 74%;
+}
+.zaglavlje h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.zaglavlje input {
+  line-height: 1.5em;
+}
+.zaglavlje select {
+  width: 25%;
+  padding: 0.3em;
+  display: inline-block;
+}
+.zaglavlje [type=email] {
+  display: block;
+  width: 100%;
+  margin-top: 3%;
+  padding-left: 1%;
+}
+.zaglavlje textarea {
+  width: 100%;
+  margin-top: 3%;
+  padding-left: 1%;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  text-align: center;
+  background-color: #374249;
+}
+footer p {
+  line-height: 2em;
+  color: white;
+}
+footer span {
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */
