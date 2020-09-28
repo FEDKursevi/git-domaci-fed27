@@ -119,12 +119,12 @@ nav ul li a:hover {
   background-color: #f3f7f9;
   display: flex;
   flex-wrap: wrap;
-  padding: 2em 15em;
+  padding: 2em 20%;
 }
 .search .searchResults .result {
-  height: 320px;
-  width: 260px;
-  margin: 20px;
+  height: 20em;
+  width: 16em;
+  margin: 0.6em;
   position: relative;
 }
 .search .searchResults .result:hover .price {
@@ -153,7 +153,7 @@ h2 {
 }
 
 .pricing {
-  padding: 2em 15em;
+  padding: 2em 20%;
 }
 .pricing p {
   font-size: 1em;
@@ -164,7 +164,7 @@ h2 {
 .pricing table {
   padding: 0.5em;
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
 }
 .pricing table, .pricing table tr, .pricing table td {
   border-bottom: solid #797979 1px;
@@ -198,7 +198,7 @@ h2 {
 
 .ContactUs {
   background-color: #f3f7f9;
-  padding: 2em 15em;
+  padding: 2em 20%;
 }
 .ContactUs:before, .ContactUs:after {
   content: "";
@@ -249,6 +249,174 @@ footer p {
 }
 footer p span {
   color: #f75311;
+}
+
+@media screen and (max-width: 1000px) {
+  .ContactUs, .pricing {
+    padding: 2em 10%;
+  }
+
+  .ContactUs iframe {
+    float: none;
+    display: block;
+    width: 50%;
+    height: 17em;
+    margin: 0 auto;
+  }
+  .ContactUs form {
+    float: none;
+    clear: both;
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  .pricing table {
+    width: 100%;
+  }
+
+  .search .searchResults {
+    padding: 2em 10%;
+    justify-content: center;
+  }
+  .search .searchResults .result {
+    height: 16em;
+  }
+  .search .searchfilter ul {
+    margin-right: 12%;
+  }
+
+  nav .home p {
+    margin-bottom: 6px;
+  }
+  nav .home p img {
+    width: 30%;
+    margin-bottom: -11px;
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ContactUs, .pricing {
+    padding: 2em 2%;
+  }
+
+  .ContactUs iframe {
+    float: none;
+    display: block;
+    width: 100%;
+    height: 17em;
+    margin: 0 auto;
+  }
+  .ContactUs form {
+    float: none;
+    clear: both;
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  .pricing table {
+    width: 100%;
+  }
+
+  .search .searchResults {
+    padding: 2em 2%;
+    justify-content: center;
+  }
+  .search .searchResults .result {
+    width: 100%;
+    height: 16em;
+  }
+  .search .searchfilter ul {
+    margin: 0 auto;
+  }
+  .search .searchfilter ul li {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+
+  .intro {
+    height: auto;
+    background-image: none;
+    background-color: black;
+  }
+  .intro .wrap1 {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+    position: relative;
+    top: 5%;
+  }
+
+  nav {
+    height: 4em;
+    width: 100%;
+  }
+  nav .home {
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-color: #f75311;
+    color: white;
+    font-size: 1.3em;
+    padding: 1em;
+    position: relative;
+  }
+  nav .home p {
+    display: inline-block;
+    margin: auto;
+    text-decoration: underline;
+  }
+  nav .home p img {
+    width: 15%;
+    margin-bottom: -12px;
+  }
+  nav ul {
+    float: left;
+    height: 100%;
+    width: 80%;
+    margin-top: 0;
+    background-color: #374249;
+    padding: 1.2em 0;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-top: 0.3em;
+    margin-left: 1.2em;
+    margin-right: 2em;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  nav {
+    height: auto;
+    width: 100%;
+  }
+  nav .home {
+    float: none;
+    width: 100%;
+  }
+  nav .home p {
+    margin-bottom: 6px;
+  }
+  nav .home p img {
+    width: 20%;
+    margin-bottom: -16px;
+  }
+  nav ul {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    padding: 0.5em 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
