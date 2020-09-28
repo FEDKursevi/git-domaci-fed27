@@ -40,4 +40,385 @@ nav ul a {
   color: #fff;
 }
 
+.firstSection {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 3em 0;
+}
+.firstSection h1 {
+  font-size: 2.5em;
+}
+
+.secondSection ul {
+  list-style: none;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.secondSection ul:before, .secondSection ul:after {
+  content: "";
+  display: block;
+}
+.secondSection ul:after {
+  clear: both;
+}
+.secondSection ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
+.secondSection ul button {
+  background-color: white;
+  border: 1px solid #797979;
+  padding: 10px;
+  border-radius: 15px;
+}
+.secondSection ul button:hover {
+  background-color: #797979;
+  color: #fff;
+}
+
+.gallery {
+  padding: 30px 10px;
+  background-color: #f3f7f9;
+  width: 100%;
+}
+
+.box1 {
+  background-image: url("../slike/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.box1 .price {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.box1:hover .price {
+  display: unset;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 10px;
+}
+.box1:hover .price p {
+  font-size: 1.5em;
+}
+
+.box2 {
+  background-image: url("../slike/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.box2 .price {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.box2:hover .price {
+  display: unset;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 10px;
+}
+.box2:hover .price p {
+  font-size: 1.5em;
+}
+
+.box3 {
+  background-image: url("../slike/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.box3 .price {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.box3:hover .price {
+  display: unset;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 10px;
+}
+.box3:hover .price p {
+  font-size: 1.5em;
+}
+
+.box4 {
+  background-image: url("../slike/4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.box4 .price {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.box4:hover .price {
+  display: unset;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 10px;
+}
+.box4:hover .price p {
+  font-size: 1.5em;
+}
+
+.box5 {
+  background-image: url("../slike/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.box5 .price {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.box5:hover .price {
+  display: unset;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 10px;
+}
+.box5:hover .price p {
+  font-size: 1.5em;
+}
+
+.box6 {
+  background-image: url("../slike/6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.box6 .price {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.box6:hover .price {
+  display: unset;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 10px;
+}
+.box6:hover .price p {
+  font-size: 1.5em;
+}
+
+h2,
+.thirdSection p,
+h3 {
+  color: #374249;
+  text-align: center;
+}
+
+h2,
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 20px 0;
+}
+
+table,
+td,
+th {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+.noBorder {
+  border: none;
+}
+
+table {
+  margin: 30px auto;
+  empty-cells: hide;
+  border-top: none;
+  border-left: none;
+  text-align: center;
+  width: 60%;
+}
+table td,
+table th {
+  padding: 10px;
+}
+
+.thOrange {
+  background-color: #f75311;
+  color: #fff;
+}
+
+.thGray {
+  background-color: #374249;
+  color: #fff;
+}
+
+.checkThePrice {
+  display: none;
+}
+
+.googleMap {
+  padding: 30px 0 20px 70px;
+  display: inline-block;
+  height: 350px;
+  width: 48%;
+}
+
+.form {
+  float: right;
+  padding: 30px;
+  width: 48%;
+}
+.form:before, .form:after {
+  content: "";
+  display: block;
+}
+.form:after {
+  clear: both;
+}
+
+form {
+  padding: 30px;
+  background-color: #f75311;
+  border-radius: 5px;
+}
+form input,
+form textarea,
+form select {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #797979;
+}
+form #gender {
+  width: 30%;
+}
+form #name {
+  width: 69%;
+}
+form #email {
+  display: block;
+  width: 100%;
+}
+form #msg {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  background-color: #374249;
+  padding: 15px;
+  text-align: center;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+}
+
+.orange {
+  color: #f75311;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    clear: both;
+  }
+  nav ul li {
+    padding-top: 10px;
+    float: none;
+    text-align: center;
+  }
+
+  #location {
+    text-align: left;
+    width: 100%;
+  }
+
+  .thirdSection {
+    padding: 30px;
+  }
+
+  table {
+    display: none;
+  }
+
+  .checkThePrice {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #797979;
+    border-radius: 10px;
+    color: #797979;
+    background-color: #fff;
+    margin: 20px auto;
+  }
+  .checkThePrice:hover {
+    background-color: #374249;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .googleMap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .googleMap iframe {
+    width: 60%;
+  }
+
+  .form {
+    float: unset;
+    width: 100%;
+  }
+  .form #gender {
+    width: 100%;
+  }
+  .form #name {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
