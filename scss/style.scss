@@ -1,0 +1,321 @@
+@import 'vars';
+@import 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+nav{
+    width: 100%;
+    display: inline-block;
+    
+
+    .locationNavDiv{
+        width: 15%;
+        padding: 1.1%;
+        padding-left: 4.7%;
+        margin-left: 0px;
+        display: inline-block;
+        background-color: $main-orange-color;
+
+        i{
+            color:$sections-background-color;
+        }
+        a{
+            padding-left: 5%;
+            font-size: 0.9em;
+            text-decoration: none;
+            color:$sections-background-color;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .navLinksDiv{
+        width: 77%;
+        padding: 1.1%;
+        display: inline-block;
+        background-color: $header-footer-main-color;
+
+        ul{
+            list-style-type: none;
+            padding-left: 2%;
+
+            li{
+                display: inline-block;
+                padding-right: 6%;;
+
+                a{
+                    font-size: 0.8em;
+                    text-decoration: none;
+                    color: $sections-background-color;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section{
+    width: 100%;
+}
+
+.sec1{
+    height: 12em;
+    background-image: url(../slike/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 35em;
+    padding-top: 20em;
+    
+
+    .header{
+        width: 70%;
+        background-color: $main-headings-color;
+        background: $opacity-header-div;
+        text-align: center;
+        margin: 0 auto;
+        
+
+        h1{
+            color: $sections-background-color;
+            font-weight: normal;
+            font-size: 2em;
+        }
+        h3{
+            color: $sections-background-color;
+            font-weight: normal;
+            font-size: 1em;
+        }
+    }
+}
+
+.sec2{
+    
+    .buttonsDiv{
+        width: 26%;
+        margin-left: 61%;
+
+        button{
+            padding: 3%;
+            margin: 5%;
+            
+            border-radius: 20px;
+            border: 1px solid $hover-buttons-color;
+            color: $text-buttons-color;
+            background-color: white;
+            font-size: 0.7em;
+            font-weight: 200;
+
+            &:hover{
+                color: $text-color-white;
+                background-color: $hover-buttons-color;
+            }
+            
+        }
+        
+    }
+}
+
+.sec3{
+    width: 100%;
+    padding: 2% 0;
+    height: 44em;
+    background-color: $sections-background-color;
+
+    .imagesDiv{
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px 0;
+
+        .images{
+            width: 22%;
+            height: 20em;
+            display: inline-block;
+            overflow: hidden;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            position: relative;
+
+            .apartmentPrice{
+                position: absolute;
+                width: 100%;
+                height: 100px;
+                background-color: rgba($color: #ffffff, $alpha: 0.6);
+                visibility: hidden;
+                font-size: 1.5em;
+                padding-top: 10%;
+                padding-left: 10%;
+
+            }
+            &:hover .apartmentPrice{
+                visibility: visible;
+            }
+
+        }
+        
+        .background1{
+            background-image: url(../slike/1.jpg);
+            background-size: cover;
+        }
+        .background2{
+            background-image: url(../slike/2.jpg);
+            background-size: cover;
+        }
+        .background3{
+            background-image: url(../slike/3.jpg);
+            background-size: cover;
+        }
+        .background4{
+            background-image: url(../slike/4.jpg);
+            background-size: cover;
+        }
+        .background5{
+            background-image: url(../slike/5.jpg);
+            background-size: cover;
+        }
+        .background6{
+            background-image: url(../slike/6.jpg);
+            background-size: cover;
+        }
+
+    }
+}
+
+.sec4{
+    width: 100%;
+    height: 30em;
+    
+    .tableDiv{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        h1{
+            color: $main-headings-color;
+            font-size: 2em;
+            margin: 2%;
+        }
+        h2{
+            color:$main-font-color;
+            font-size: 1em;
+            margin: 3%;
+            font-weight: lighter;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 0 auto;
+            tr{
+                
+                .redColumnTable{
+                    background-color: $main-orange-color;
+                    color: $text-color-white;
+                    font-weight: 500;
+                }
+                .grayColumns{
+                    background-color: $main-headings-color;
+                    color: $text-color-white;
+                    font-weight: 500;
+                }
+                .noBorder{
+                    border: none;
+                }
+            }
+            td{
+                border: 1px solid white;
+                width: 10%;
+                padding: 1% 0;
+                text-align: center;
+                border: 1px solid $text-buttons-color;
+
+                
+
+            }
+        }
+    }
+}
+
+.sec5{
+    width: 100%;
+    background-color: $sections-background-color;
+    height: 40em;
+    //text-align: center;
+    h1{
+        text-align: center;
+        //margin: 5%;
+        padding: 3%;
+    }
+    .map{
+        display: inline-block;
+        //background-color: yellow;
+        width: 30%;
+        margin: 5%;
+
+        #googleMaps{
+            width: 100%;
+            height: 300px;
+            //margin-top: 10%;
+            
+        }
+    }
+
+    .formDiv{
+        display: inline-block;
+        background-color:$main-orange-color;
+        width: 59%;
+        //padding: 5%;
+        
+        select{
+            width: 20%;
+            margin: 3%;
+            padding: 1%;
+        }
+        input[type = 'text']{
+            width: 63.5%;
+            margin: 3%;
+            padding: 1%;
+        }
+        input[type="email"]{
+            width: 90%;
+            margin: 3%;
+            padding: 1%;
+        }
+        textarea{
+            width: 90.5%;
+            margin: 3%;
+            padding: 1%
+        }
+    }
+}
+
+.sec6{
+    width: 100%;
+    background-color: $header-footer-main-color;
+    text-align: center;
+    
+    
+    
+    h1{
+        font-size: 1em;
+        font-weight: lighter;
+        display: inline-block;
+        color: $text-color-white;
+        padding: 1% 0;
+    }
+    h2{
+        font-size: 1em;
+        color: $main-orange-color;
+        font-weight: lighter;
+        display: inline-block;
+        padding: 1% 0;
+    }
+
+    
+}
