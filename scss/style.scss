@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: $font;
+    
 }
 
 nav{
@@ -99,11 +100,11 @@ section{
 .sec2{
     
     .buttonsDiv{
-        width: 26%;
-        margin-left: 61%;
+        width: 45%;
+        margin-left: 50%;
 
         button{
-            padding: 3%;
+            padding: 2% 6%;
             margin: 5%;
             
             border-radius: 20px;
@@ -239,6 +240,9 @@ section{
 
             }
         }
+        button{
+            display: none;
+        }
     }
 }
 
@@ -246,23 +250,19 @@ section{
     width: 100%;
     background-color: $sections-background-color;
     height: 40em;
-    //text-align: center;
+    
     h1{
         text-align: center;
-        //margin: 5%;
         padding: 3%;
     }
     .map{
         display: inline-block;
-        //background-color: yellow;
         width: 30%;
         margin: 5%;
 
         #googleMaps{
             width: 100%;
             height: 300px;
-            //margin-top: 10%;
-            
         }
     }
 
@@ -270,7 +270,6 @@ section{
         display: inline-block;
         background-color:$main-orange-color;
         width: 59%;
-        //padding: 5%;
         
         select{
             width: 20%;
@@ -319,3 +318,205 @@ section{
 
     
 }
+
+@media screen and (max-width: 1200px){
+    
+    nav{
+        .locationNavDiv{
+            a{
+                font-size: 1.2em;
+            }
+        }
+
+        .navLinksDiv{
+            ul{
+                li{
+                    a{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    .sec1{
+        background-size: unset;
+
+        .header{
+            width: 49%;
+
+            h1{
+                padding: 0 15%;
+            }
+        }
+    }
+
+    .sec2{
+        .buttonsDiv{
+            width: 58%;
+            margin-left: 42%;
+
+            button{
+                padding: 1% 5%;
+                margin: 2% 1%;
+
+            }
+        }
+    }
+
+    .sec3{
+        height: auto;
+
+        .imagesDiv{
+            width: 70%;
+
+            .images{
+                width: 45%;
+                height: 14em;
+            }
+        }
+    }
+
+    .sec4{
+        height: 22em;
+
+        .tableDiv{
+            width: 70%;
+
+            h2{
+                margin: 6%;
+            }
+        }
+    }
+
+    .sec5{
+        height: 47em;
+
+        .map{
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+        }
+
+        .formDiv{
+            display: block;
+            margin: 2% auto;
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    *{
+        box-sizing: border-box;
+    }
+
+    nav{
+        .locationNavDiv{
+            width: 100%;
+            padding: 4% ;
+
+            a{
+                font-size:1.5em;
+            }
+            i{
+                font-size: 1.5em;
+            }
+        }
+
+        .navLinksDiv{
+            width: 100%;
+            height: 15em;
+            text-align: center;
+
+            ul{
+                li{
+                    display: block;
+                    padding-top: 4%;
+                }
+            }
+        }
+    }
+
+    .sec1{
+        background-image: none;
+        background-color: black;
+        padding-top: 0;
+
+        .header{
+            width: 90%;
+            background: none;
+
+            h1{
+                font-size: 2.5em;
+            }
+        }
+    }
+
+    .sec2{
+        .buttonsDiv{
+            width: 100%;
+            margin: 0 auto;
+            
+            button{
+                border-radius: 80px;
+                padding: 3% 5%;
+                font-size: 0.8em;
+            }
+        }
+
+    }
+
+    .sec3{
+        .imagesDiv{
+            width: 90%;
+            margin: 0 auto;
+
+            .images{
+                width: 100%;
+                height: 18em;
+                margin: 0 0 5% 0;
+
+                .apartmentPrice{
+                    visibility: visible;
+                    padding: 4% 0 0 3%;
+
+                }
+            }
+        }
+    }
+
+    .sec4{
+        height: 15em;
+
+        .tableDiv{
+            table{
+                display: none;
+            }
+            
+            button{
+                display: block;
+                padding: 4% 15%;
+                margin: 20% auto;
+                border-radius: 50px;
+                border: 1px solid $hover-buttons-color;
+                color: $text-buttons-color;
+                background-color: white;
+                font-size: 0.7em;
+                font-weight: 200;
+
+                &:hover{
+                    background-color: $hover-buttons-color;
+                }
+
+            }
+        }
+    }
+
+    .sec5{
+        .map{
+            width: 55%;
+        }
+    }
+}
+
